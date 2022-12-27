@@ -1,0 +1,30 @@
+
+
+    <div class="container mt-4">
+        <div class="card" >
+            <div class="card-header">
+                Login Form
+            </div>
+            <div class="card-body">
+                <form action="/auth/login" method="post">
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Login User</button>
+                </form>
+            </div>
+        </div>
+        
+        {{#if message }}
+            <h6 class="alert alert-danger mt-4">{{message}}</h6>
+        {{/if}}
+    </div>
+

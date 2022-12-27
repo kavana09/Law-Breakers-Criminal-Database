@@ -1,0 +1,85 @@
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" value="{{this.first_name}}" placeholder="First Name" name="first_name">
+            <label for="floatingInput">First Name</label>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" value="{{this.last_name}}" placeholder="Last Name" name="last_name">
+            <label for="floatingInput">Last Name</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" value="{{this.place}}" placeholder="Place" name="place">
+            <label for="floatingInput">Place</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="date" class="form-control" id="floatingInput" value="{{this.date}}" placeholder="Place" name="date">
+            <label for="floatingInput">Date</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput"  placeholder="Place" name="height">
+            <label for="floatingInput">Height</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput"  placeholder="Place" name="weight">
+            <label for="floatingInput">Weight</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput"  placeholder="Place" name="ctype">
+            <label for="floatingInput">Crime type</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput"  placeholder="Place" name="prison_dur">
+            <label for="floatingInput">Prison duration</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput"  placeholder="Place" name="no_of_times">
+            <label for="floatingInput">Number of times</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+        <textarea type="text" class="form-control" placeholder="Description" id="comments" name="description" style="height: 200px;">{{this.description}}</textarea>
+        <label for="floatingInput">Description</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="avatar">Choose the criminal photo:</label>
+    </div>
+    <div class="mb-3">
+        <input type="file" name="criminal_photo" accept="image/*"/>
+    </div>
+
+    
+    {{!-- {{#if view}}
+    {{else}} --}}
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+    {{!-- {{/if}} --}}

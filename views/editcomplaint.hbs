@@ -1,0 +1,13 @@
+
+{{#if message}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+{{#each rows}}
+<form class="row g-3 needs-validation m-4 " action="/editcomplaint/{{this.complaint_no}}" method="post" novalidate>
+    {{> complaint-form}}   
+</form>
+{{/each}}

@@ -1,0 +1,65 @@
+html,body {
+    height:150%;
+}
+
+.table {
+    background-color: #fff;
+}
+
+.wrap {
+    background-color: #fff;
+}
+
+.mb-3 {
+    background-color: #fff;
+}
+
+nav {
+    background-color:brown;
+    color: #fff;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+}
+
+nav li a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.avatar-ctn {
+    background-color: orange;
+    text-align: center;
+}
+
+.avatar {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.wrapper {
+    background-image: url('giphy.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+

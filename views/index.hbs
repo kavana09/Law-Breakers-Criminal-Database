@@ -1,0 +1,24 @@
+
+
+    <div class="container mt-4">
+        <div class="mt-4 p-5 bg-black text-white rounded">
+        <h1>Law Breakers (Criminal DataBase) - Home Page</h1>
+        <p>Register to lodge a complaint. If you already have an account then login.</p>
+        <button type="button" class="btn bg-info">Learn more</button>
+    </div>
+
+    {{#if user}}
+        <div class="card text-center mt-4 mb-4">
+            <div class="card-header">
+                Register Complaint
+            </div>
+            <div class="card-body">
+                <div class="card-title">Hey <b>{{user.name}}</b> Welcome back!</div>
+                <p class="card-text"> </p>
+                <a href="/registercomplaint" class="btn btn-primary">Register Complaint</a>
+            </div>
+            <div class="card-footer text-muted">
+                Karnataka Police Dept.
+            </div>
+        </div>
+    {{/if}}
